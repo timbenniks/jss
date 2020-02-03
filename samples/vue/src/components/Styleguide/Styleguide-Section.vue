@@ -7,8 +7,6 @@
   <div class="pt-3" :id="`i${rendering.uid.replace(/[{}]/g, '')}`">
     <sc-text class="border-bottom" :field="fields.heading" tag="h3" />
     <sc-placeholder name="jss-styleguide-section" :rendering="rendering" />
-    <h6>LOL</h6>
-    <pre>{{ rendering }}</pre>
   </div>
 </template>
 
