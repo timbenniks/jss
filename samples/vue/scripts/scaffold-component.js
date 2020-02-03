@@ -92,14 +92,39 @@ export default {
 </script>
 `;
 
+  const componentTestTemplate = `import { shallowMount } from '@vue/test-utils';
+import ${componentName} from './${componentName}.vue';
+import { Text } from '@sitecore-jss/sitecore-jss-vue';
+
+describe('${componentName}.vue', () => {
+  it('renders props.fields when passed', () => {
+    const fields = {
+      heading: { value: 'heading' },
+    };
+    const wrapper = shallowMount(${componentName}, {
+      propsData: { fields },
+      stubs: {
+        ScText: Text,
+      },
+    });
+
+    expect(wrapper.html()).toContain('<p>${componentName} Component</p>');
+    expect(wrapper.html()).toContain('<span>heading</span>');
+  });
+});
+
+`;
+
   const outputDirectoryPath = componentRootPath;
   const outputFilePath = path.join(outputDirectoryPath, `${componentName}.vue`);
+  const outputTestFilePath = path.join(outputDirectoryPath, `${componentName}.spec.js`);
 
   if (fs.existsSync(outputFilePath)) {
     throw `Component path ${outputFilePath} already exists. Not creating component.`;
   }
 
   fs.writeFileSync(outputFilePath, componentTemplate, 'utf8');
+  fs.writeFileSync(outputTestFilePath, componentTestTemplate, 'utf8');
 
   return outputFilePath;
 }

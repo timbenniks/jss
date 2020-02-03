@@ -11,8 +11,7 @@ export default {
   name: 'ContentBlock',
   props: {
     fields: {
-      type: Object,
-      default: () => ({}),
+      type: Object
     },
   },
   components: {

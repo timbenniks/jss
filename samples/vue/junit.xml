@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="6" failures="0" time="1.683">
+  <testsuite name="Styleguide-SitecoreContext.vue" errors="0" failures="0" skipped="0" timestamp="2020-02-03T17:12:13" time="0.602" tests="1">
+    <testcase classname="Styleguide-SitecoreContext.vue renders props.fields when passed" name="Styleguide-SitecoreContext.vue renders props.fields when passed" time="0.031">
+    </testcase>
+  </testsuite>
+  <testsuite name="ContentBlock.vue" errors="0" failures="0" skipped="0" timestamp="2020-02-03T17:12:13" time="0.613" tests="1">
+    <testcase classname="ContentBlock.vue renders props.fields when passed" name="ContentBlock.vue renders props.fields when passed" time="0.021">
+    </testcase>
+  </testsuite>
+  <testsuite name="Styleguide-RouteFields.vue" errors="0" failures="0" skipped="0" timestamp="2020-02-03T17:12:13" time="0.654" tests="1">
+    <testcase classname="Styleguide-RouteFields.vue renders props.fields when passed" name="Styleguide-RouteFields.vue renders props.fields when passed" time="0.046">
+    </testcase>
+  </testsuite>
+  <testsuite name="Styleguide-Multilingual.vue" errors="0" failures="0" skipped="0" timestamp="2020-02-03T17:12:13" time="0.657" tests="1">
+    <testcase classname="Styleguide-Multilingual.vue renders props.fields when passed" name="Styleguide-Multilingual.vue renders props.fields when passed" time="0.058">
+    </testcase>
+  </testsuite>
+  <testsuite name="Styleguide-Specimen.vue" errors="0" failures="0" skipped="0" timestamp="2020-02-03T17:12:13" time="0.146" tests="1">
+    <testcase classname="Styleguide-Specimen.vue renders props.fields when passed" name="Styleguide-Specimen.vue renders props.fields when passed" time="0.007">
+    </testcase>
+  </testsuite>
+  <testsuite name="Styleguide-Sitection.vue" errors="0" failures="0" skipped="0" timestamp="2020-02-03T17:12:13" time="0.138" tests="1">
+    <testcase classname="Styleguide-Sitection.vue renders props.fields when passed" name="Styleguide-Sitection.vue renders props.fields when passed" time="0.012">
+    </testcase>
+  </testsuite>
+</testsuites>
