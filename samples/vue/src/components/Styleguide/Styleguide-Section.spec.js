@@ -13,17 +13,6 @@ describe('Styleguide-Sitection.vue', () => {
     const rendering = {
       uid: 'PXmRJVrtzFAHsxjs7voD5R',
       componentName: 'UnitTestingMock',
-      placeholders: {
-        // 'jss-styleguide-section': [
-        //   {
-        //     uid: '{63B0C99E-DAC7-5670-9D66-C26A78000EAE}',
-        //     componentName: 'ContentBlock',
-        //     dataSource: 'available-in-connected-mode',
-        //     params: {},
-        //     fields: {},
-        //   },
-        // ],
-      },
     };
 
     const wrapper = shallowMount(StyleguideSection, {
