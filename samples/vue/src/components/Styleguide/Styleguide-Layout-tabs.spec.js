@@ -4,7 +4,7 @@ import StyleguideSpecimen from './Styleguide-Specimen.vue';
 import { Text, RichText, Placeholder } from '@sitecore-jss/sitecore-jss-vue';
 
 describe('Styleguide-Layout-Tabs.vue', () => {
-  it('Sections render', () => {
+  it('base component is rendered', () => {
     const fields = {
       heading: { value: 'MockHeader' },
       description: { value: 'MockDescription' },
@@ -46,5 +46,7 @@ describe('Styleguide-Layout-Tabs.vue', () => {
 
     expect(wrapper.html()).toContain('<div id="iPXmRJVrtzFAHsxjs7voD5R" class="pt-3" data-e2e-id="styleguide-layout-tabs">');
     expect(wrapper.html()).toContain('Implementation: <code>/src/components/UnitTestingMock/index.js</code>');
+
+    wrapper.setData({ activeTabIndex: 1 })
   });
 });
